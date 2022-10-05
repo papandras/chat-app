@@ -1,0 +1,87 @@
+body {
+    width: max-content;
+    background: rgb(214, 213, 213);
+    margin: auto;
+    text-align: center;
+}
+
+form, #messages, #users {
+    width: 50rem;
+    box-shadow: 0 0 5px 5px gray;
+    border-radius: 10px;
+    padding: 20px;
+    margin-block: 20px;
+}
+
+form input {
+    background: rgb(206, 206, 206);
+    border: none;
+    padding: 5px 8px;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, gray, white);
+    font-weight: bold;
+    font-style: oblique;
+    border: .5px solid gray;
+    margin-block: 10px;
+}
+
+#messages {
+    text-align: left;
+    height: 20rem;
+    overflow-y: scroll;
+}
+
+#messages p {
+    width: 50rem;
+    cursor: pointer;
+    user-select: none;
+    margin-block: 0;
+    padding-block: 5px;
+    transition: all 200ms ease-in-out;
+}
+
+#messages p a {
+    cursor: grab;
+    user-select: none;
+    font-style: italic;
+    font-weight: bold;
+    margin-inline: .5rem;
+}
+
+#messages p a:active {
+    color: unset;
+    outline: none;
+}
+
+.activep {
+    background-color: rgba(30,144,255,255);
+    color: white;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+* :focus {
+    outline: 1px solid orange;
+}
+
+fieldset {
+    margin-block: 10px;
+    padding-block: 10px;
+}
+
+#flash {
+    visibility: hidden;
+}
+
+#roomMembers {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#roomMembers p {
+    margin-inline: 1rem;
+}
